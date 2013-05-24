@@ -1,0 +1,224 @@
+<%@taglib prefix="s" uri="/struts-tags"%>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy Eat @CMU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/homepage.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/homepage.js"></script>
+  </head>
+  <body>
+  	<div class="navbar navbar-fixed-top"> <!--begin of fixed-top bar  -->
+        <div class="navbar-inner">
+            <div class="container">
+                <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html" rel="home">Easy Eat @CMU</a>
+            </div>
+        </div>
+    </div><!--end of fixed-top bar  -->
+
+  	<div class="page-header"> <!--began of brand and main tab bar  -->
+	  	<div class="row" style="margin-top:60px">
+	  		<div class="span2 offset1 ">
+	  			<a class="brand" href="index.html" rel="home"><h3>Easy Eat</h3> </a>
+	  		</div>
+	  		<div class="span5 offset1"> 
+			   	<ul class="nav nav-pills">
+			       <li class="active"><a href="index.html" >Best</a></li>
+			       <li><a href="worstfood.html">Worst</a></li>
+			       <li><a href="tags.html">Tags</a></li>
+			       <li><a href="users.html">Users</a></li>
+			       <li><a href="newpost.html">NewPost</a></li>
+			    </ul>
+			</div>
+		</div>	<!--end of mian tab--> 
+	</div><!--end of brand and main tab bar  -->
+	<div class="container"> <!--begin of post-->
+		 <div class="row"><!--begin of sub tab-->    
+			<div class="span5 offset3">
+			    <ul class="nav nav-tabs">
+			       <li class="active"><a href="#hot" >hot</a></li>
+			       <li><a href="#new">new</a></li>
+			       <li><a href="#rising">rising</a></li>
+			       <li><a href="#controversial">controversial</a></li>
+			    </ul>
+			 </div>
+		</div>	<!--/.row -->
+		<div class="row-content">
+			<div class="span8 offset1"> <!--begin of post content -->
+			 	<div class="row"><!--begin of a food item -->
+			 		<div class="span1"> <!--begin of vote -->
+			 			<!-- Button to trigger modal -->
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-up icon-2x"></i></a>
+						<h4>410</h4>
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-down icon-2x"></i></a>
+					</div><!--end of vote -->
+					<div class="span2"> <!--begin of photo -->
+						<a href="#" id="foodphoto" rel="popover">
+							<img src="http://imgur.com/Btz6nDQ.jpg" alt="###">
+						</a>
+					</div><!--end of photo -->
+					<div class="span5"> <!--begin of food description -->
+						<div class="caption">
+							<a href="fooddetail.html" >
+								<h3>
+									Chenlu's smelly tofu
+								</h3>
+							</a>
+						</div>
+						<div class="item-desc">
+							<div style="float:right"></div>
+							<i class="icon-time"></i>
+							<a href="fooddetail.html">Sunday, April 7th</a>
+							<i class="icon-comment"></i>
+							<a href="fooddetail.html">Comments</a>
+							<p></p>
+							<a href="tag.html" class="label label-warning">Chinese</a>
+							<a href="tag.html" class="label label-warning">Vegetarian</a>
+							<a href="tag.html" class="label label-warning">dry</a>
+							<div class="clear"></div>
+						</div>
+					</div><!--end of food description -->
+				</div><!--end of a food item -->
+				<hr><!--total end of a food item -->
+			 	<div class="row"><!--begin of a food item -->
+			 		<div class="span1"> <!--begin of vote -->
+			 			<!-- Button to trigger modal -->
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-up icon-2x"></i></a>
+						<h4>410</h4>
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-down icon-2x"></i></a>
+					</div><!--end of vote -->
+					<div class="span2"> <!--begin of photo -->
+						<a href="#" data-toggle="popover" data-placement="right" title="A Title" data-content="And">
+							<img id="foodphoto" src="img/IMG_0205.jpg" alt="###">
+						</a>
+					</div><!--end of photo -->
+					<div class="span5"> <!--begin of food description -->
+						<div class="caption">
+							<a href="fooddetail.html" >
+								<h3>
+									Chenlu's smelly tofu
+								</h3>
+							</a>
+						</div>
+						<div class="item-desc">
+							<div style="float:right"></div>
+							<i class="icon-time"></i>
+							<a href="fooddetail.html">Sunday, April 7th</a>
+							<i class="icon-comment"></i>
+							<a href="fooddetail.html">Comments</a>
+							<p></p>
+							<a href="tag.html" class="label label-warning">Chinese</a>
+							<a href="tag.html" class="label label-warning">Vegetarian</a>
+							<a href="tag.html" class="label label-warning">dry</a>
+							<div class="clear"></div>
+						</div>
+					</div><!--end of food description -->
+				</div><!--end of a food item -->
+				<hr><!--total end of a food item -->
+			 	<div class="row"><!--begin of a food item -->
+			 		<div class="span1"> <!--begin of vote -->
+			 			<!-- Button to trigger modal -->
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-up icon-2x"></i></a>
+						<h4>410</h4>
+						<a class="icon" href="#myModal" data-toggle="modal"><i class="icon-hand-down icon-2x"></i></a>
+					</div><!--end of vote -->
+					<div class="span2"> <!--begin of photo -->
+						<a href="#" data-toggle="popover" data-placement="right" title="A Title" data-content="And">
+							<img id="foodphoto" src="img/IMG_0205.jpg" alt="###">
+						</a>
+					</div><!--end of photo -->
+					<div class="span5"> <!--begin of food description -->
+						<div class="caption">
+							<a href="fooddetail.html" >
+								<h3>
+									Chenlu's smelly tofu
+								</h3>
+							</a>
+						</div>
+						<div class="item-desc">
+							<div style="float:right"></div>
+							<i class="icon-time"></i>
+							<a href="fooddetail.html">Sunday, April 7th</a>
+							<i class="icon-comment"></i>
+							<a href="fooddetail.html">Comments</a>
+							<p></p>
+							<a href="tag.html" class="label label-warning">Chinese</a>
+							<a href="tag.html" class="label label-warning">Vegetarian</a>
+							<a href="tag.html" class="label label-warning">dry</a>
+							<div class="clear"></div>
+						</div>
+					</div><!--end of food description -->
+				</div><!--end of a food item -->
+				<hr><!--total end of a food item -->
+				<div class="pagination">
+					<ul>
+						<li class="active"><a href="">1</a></li>
+						<li><a href="###">2</a></li>
+						<li><a href="###">3</a></li>
+						<li><a href="###">4</a></li>
+						<li><a href="###">5</a></li>
+						<li class="next"><a href="###" title="older items">Next</a></li>
+					</ul>
+				</div><!--end of pagination -->
+			</div><!--end of post content -->
+			<div class="span4"><!--begin of search and advertisment -->
+
+			</div><!--end of search and advertisment -->
+		</div><!--end of row-content -->
+	</div> 	<!--end of post container -->  
+	<footer>
+		<div class="containter">
+
+		</div>
+		<p class="pull-left">Esay Eat 2013.</p>
+		<p class="pull-right btt">
+			<a href="#">
+				<i class="icon-caret-right"></i>
+				Back to top
+			</a>
+		</p>
+	</footer>
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	 	<div class="modal-header">
+	   		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	   		<h3 id="myModalLabel">Sign in</h3>
+	  	</div>
+	  	<div class="modal-body">
+	    	<table>
+	                <tr>
+	                    <td>E-mail Address:</td>
+	                </tr>
+	                <tr>
+	                    <td colspan="2">
+	                   		 <input type="email"  name="email"  value= ""/>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>Password:</td>
+	                </tr>
+	                 <tr>
+	                    <td colspan="2">
+	                    <input type="password" name="password" />
+	                    </td>
+	                </tr>
+	            </table>
+	  	</div>
+	  	<div class="modal-footer">
+	    	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	    	<button class="btn btn-primary">Sign in</button>
+	  	</div>
+	</div> 
+  </body>
+</html>

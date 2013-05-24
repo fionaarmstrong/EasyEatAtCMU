@@ -1,0 +1,308 @@
+/*add by zcl 04/10/2013 home-best page*/ 
+
+div#myposts{
+  background-color:white;
+  width:600px;
+  margin-top: -20px;
+}
+
+div#weekslider{
+  margin-top: 20px;
+}
+
+#searchkey{
+   -webkit-border-radius: 0px;
+   position: relative;
+   margin-top: 8px;
+}
+
+#searchkeybutton{
+  width:60px;
+  height: 30px;
+  background-color:#B40404; 
+  color: white;
+  border: none;
+  margin-left: -3px;
+  margin-top: 8px;
+}
+
+#button{
+  height: 30px;
+  background-color:#B40404; 
+  color: white;
+  border: none;
+}
+
+div#foodphoto{
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+div#fooddescribe{
+    margin-left: -30px;
+    margin-top:-20px;
+}
+
+img#foodphoto{
+  width:100px;
+  height:100px;
+  margin-top: -10px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px #888;
+  -ms-box-shadow: 5px 5px 5px 5px #888;
+  -moz-box-shadow: 5px 5px 5px 5px #888;
+  -webkit-box-shadow: 5px 5px 5px 5px #888;
+}
+
+img#profile{
+  margin-top: 40px;
+  width: 130px;
+  height: 130px;
+}
+
+#brand{
+  margin-top: 3px;
+  margin-left: 10px;
+   color: #610B0B; 
+   font-size: 20px;
+   font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+img.slider{
+  width:250px; 
+  height:200px;
+}
+
+img.slider1{
+  width:500px; 
+  height:320px;
+}
+
+td{
+  padding:5px;
+}
+
+#mainmenus{
+  margin-top: 4px;
+  margin-left: -90px;
+}
+
+#mainmenu{
+  color: #B40404; 
+}
+#mainmenu:hover{
+  color: white; 
+  background-color:#B40404;
+}
+
+#userphotoicon{
+  margin-top: 10px;
+  width: 28px;
+  height: 28px;
+}
+#love,
+#votelove,
+#detaillove
+{
+  color:#B40404; 
+  text-decoration: none;
+}
+
+#love:hover,
+#votelove:hover, 
+#detaillove:hover{
+   color:#8A0829;
+   text-decoration: none;
+   cursor: pointer;
+   cursor: hand;
+}
+
+#hate:hover,
+#votehate:hover,
+#detailhate:hover{
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#needtoVoteup{
+  color:#6E6E6E;
+}
+
+#needtoVotedown{
+  color:#6E6E6E;;
+}
+
+#needtoVoteup:hover{
+  color:#8A0829;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+#needtoVotedown:hover{
+  color:#3a87ad;
+  text-decoration: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+#popularity{
+  color:#6E6E6E; 
+}
+
+
+#font{
+  color:#6E6E6E; 
+}
+
+#postdescribe{
+  color:#6E6E6E; 
+}
+
+a#myref{
+  color:#B40404; 
+}
+a#myref:hover{
+  color: #610B0B; 
+  text-decoration: none;
+}
+li.loveandhate{
+  color:black; 
+  margin-top: 10px;
+}
+a.mymenu{
+   background-color:#D8F781;
+}
+
+
+div#newpostdiv{
+  margin-top: 36px;
+  margin-left: 25px;
+  width: 230px;
+  height: 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+a#newpost{
+  margin-left: 60px;
+  margin-top: 10px;
+  color: #B40404; 
+  width: 80px;
+  height: 20px;
+  background-color: #E6E6E6;
+
+}
+a#newpost:hover{
+  color: white; 
+  background-color:#B40404;
+  text-decoration: none;
+}
+
+div#populartag{
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 230px;
+  height: 500px;
+  background-color: #ffffff;
+
+}
+
+div#populartagcontent{
+    margin-left: -15px;
+}
+
+div#foodfanatic{
+  margin-top: 20px;
+  margin-left: 25px;
+  width: 230px;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+div#foodfanaticcontent{
+   margin-left: -15px;
+}
+
+/*add by zcl userinfo page*/
+
+div#editinfo{
+  margin-top: 90px;
+}
+
+div#userinfotab{
+  background-color: #ffffff;
+  margin-top: -20px;
+  margin-left: 200px;
+}
+
+div#userinfo{
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+
+a#mypostref{
+  color:#585858; 
+}
+
+a#mypostref:hover{
+  color: #2E2E2E; 
+  text-decoration: none;
+}
+
+img#postphoto{
+  width:70px;
+  height: 70px;
+}
+
+div#myinfo{
+  background-color: #ffffff;
+  height: 300px;
+  margin-top: -20px;
+}
+
+div#myinfotitle{
+    font-size: 15px;
+  font-weight: bold;
+}
+
+/* added by zcl tags and users*/
+p#tagfont{
+  font-size: 10px;
+  color:#585858; 
+  height: 50px;
+}
+
+
+img#userphoto{
+  width:60px;
+  height: 60px;
+}
+/* added by zcl food detail*/
+div#fooddetail{
+  background-color:white;
+  width:500px;
+  margin-top: -20px;
+}
+div#foodsubdetail{
+  width: 270px;
+  height: 350px;
+  background-color: #ffffff;
+}
+img#detailphoto{
+  width: 500px;
+  height: 350px;
+}
+table#foodtable{
+  width:250px;
+}
+/* added by zcl newpost */
+div#newpost{
+  background-color: white;
+}
+
+/*   */

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+        http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" version="1.0">
+
+    <persistence-unit name="transactions-optional" transaction-type="RESOURCE_LOCAL">
+        <provider></provider>
+        <class>com.appspot.easyeatatcmu.databean.User</class>
+        <class>com.appspot.easyeatatcmu.databean.Comment</class>
+        <class>com.appspot.easyeatatcmu.databean.Post</class>
+        <class>com.appspot.easyeatatcmu.databean.Restaurant</class>
+        <class>com.appspot.easyeatatcmu.databean.Tag</class>
+        <class>com.appspot.easyeatatcmu.databean.Vote</class>
+        <class>com.appspot.easyeatatcmu.databean.PostTag</class>
+        <properties>
+            <property name="datanucleus.NontransactionalRead" value="true"/>
+            <property name="datanucleus.NontransactionalWrite" value="true"/>
+            <property name="datanucleus.ConnectionURL" value="appengine"/>
+            <property name="javax.persistence.jdbc.driver" value="com.google.appengine.api.rdbms.AppEngineDriver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:google:rdbms://easyeatcmu:easyeatatcmudb/easyeat"/>
+            <property name="javax.persistence.jdbc.user" value=""/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+        </properties>
+    </persistence-unit>
+</persistence>

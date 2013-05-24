@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="default" extends="json-default, struts-default" namespace="/">
+        <action name="display" class="com.appspot.easyeatatcmu.controller.MainPageAction">
+            <result name="success">/home.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="login">/login.html</result>
+        </action>
+        
+        <action name="voteup" class="com.appspot.easyeatatcmu.controller.VoteUpAction">
+            <result name="success" type="json"></result>
+            <result name="error" type="json"></result>
+        </action>
+        
+        <action name="votedown" class="com.appspot.easyeatatcmu.controller.VoteDownAction">
+            <result name="success" type="json"></result>
+      
+        </action>
+    
+        <!-- add login action -->
+        
+        <action name="login" class="com.appspot.easyeatatcmu.controller.LoginAction">
+            <result name="success">/redirect.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+        
+        <action name="signout" class="com.appspot.easyeatatcmu.controller.SignOutAction">
+            <result name="success" type="redirect">/login.action</result>
+        </action>
+        
+        <action name="signup" class="com.appspot.easyeatatcmu.controller.SignUpAction">
+            <result name="success">/redirect.jsp</result>
+            <result name="login">/login.jsp</result>
+        </action>
+        
+        <action name="newpost" class="com.appspot.easyeatatcmu.controller.PostAction">
+            <result name="success">/redirect.jsp</result>
+            <result name="error">/newpost.jsp</result>
+            <result name="login">/login.html</result>
+        </action>
+        
+        <action name="enternewpost" class="com.appspot.easyeatatcmu.controller.EnterNewPostAction">
+            <result name="success">/newpost.jsp</result>
+             <result name="login">/login.html</result>
+        </action>
+        
+        <action name="searchpost" class="com.appspot.easyeatatcmu.controller.SearchPostAction">
+            <result name="login">/login.html</result>
+            <result name="success">/searchlist.jsp</result>
+        </action>
+        
+        <action name="fooddetail" class="com.appspot.easyeatatcmu.controller.FoodDetailAction">
+            <result name="login">/login.html</result>
+            <result name="success">/fooddetail.jsp</result>
+        </action>
+        
+        <action name="comment" class="com.appspot.easyeatatcmu.controller.CommentAction">
+            <result name="success" type="json"></result>
+        </action>
+        
+        <action name="searchtagajax" class="com.appspot.easyeatatcmu.controller.SearchTagAjaxAction">
+            <result name="success" type="json"></result>
+        </action>
+        
+        <action name="searchtag" class="com.appspot.easyeatatcmu.controller.SearchTagAction">
+            <result name="success">/searchlist.jsp</result>
+            <result name="login">/login.html</result>
+        </action>
+        
+        <action name="entertags" class="com.appspot.easyeatatcmu.controller.EnterTagsAction">
+            <result name="success">/tags.jsp</result>
+            <result name="login">/login.html</result>
+        </action>
+        
+        
+        <action name="test" class="com.appspot.easyeatatcmu.controller.TestAction">
+            <result name="success">/login.html</result>
+        </action>
+      		
+    </package>
+
+</struts>
